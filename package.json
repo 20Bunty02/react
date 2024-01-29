@@ -1,0 +1,19 @@
+{
+  "name": "namaste_react",
+  "version": "1.0.0",
+  "description": "this is me",
+  "main": "index.html",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "new",
+    "to",
+    "react"
+  ],
+  "author": "bunty",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
+}
