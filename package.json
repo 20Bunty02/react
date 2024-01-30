@@ -2,7 +2,7 @@
   "name": "namaste_react",
   "version": "1.0.0",
   "description": "this is me",
-  "main": "index.html",
+  "main": "index.js",
   "scripts": {
     "test": "jest"
   },
