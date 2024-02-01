@@ -1,30 +1,33 @@
-import React from "react";
+// import React from "react";
 import ReactDOM from "react-dom/client";
-var ob=React.createElement('div',{id:'parent'},
-[React.createElement('div',{id:"child1"},
-[
-    React.createElement('h1',{},"i am child1's h1"),
-    React.createElement('h2',{},"i am child1's h2") 
-]
-),
-React.createElement('div',{id:"child2"},
-[
-    React.createElement('h1',{},"i am child1's h1"),
-    React.createElement('h2',{},"i am child1's h2") 
-]
-)]
-);
+
+function Header(){
+    return(<div id="header" className="center">
+        <h1>This is heading</h1>
+    </div>);
+};
+function Body(){
+    return(
+        <div id="body" className="center">
+            <h1>This is Content Section</h1>
+        </div>
+    );
+};
+function Footer(){
+    return(
+        <div id="footer" className="center">
+            <h1>This is Footer</h1>
+        </div>
+    );
+};
+function Outline(){
+    return(
+        <div id="outline">
+            <Header />
+            <Body />
+            <Footer />
+        </div>
+    );
+};
 var root=ReactDOM.createRoot(document.getElementById('greet'));
-root.render(ob);
-// var nw=React.createElement('h1',{},"hello");
-// var rt=ReactDOM.createRoot(document.getElementById('parent'));
-// rt.render(nw);
-// var ob=React.createElement('h1',{id:"hd"},"hello world");
-// var root=ReactDOM.createRoot(document.getElementById('greet'));
-// root.render(ob);
-// console.log(document.getElementById('greet'));
-// console.log(document.createElement('div'))
-// var nw=React.createElement('div',{id:"o"},"");
-// root.render(nw);
-// var rt=ReactDOM.createRoot(document.getElementById("o"));
-// rt.render(ob);
+root.render(<Outline />);
